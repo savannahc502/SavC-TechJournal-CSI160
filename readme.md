@@ -1,0 +1,1 @@
+# This is my Welcome to the SavC-TechJournal-CSI160 wiki! This chronicles my labs and notes from Champlain College's CSI-160 class. Some material may be copied from my notes, textbooks, online sources, and Champlain College's materials.
