@@ -20,8 +20,13 @@ def start_conversion():
         num = int(userinput, 2)
         print(bin_to_base10(num))
 
+    elif (conversion_type == 3):
+        num = (hex(input("What is the Hexadecimal number?")))
+        return (hex_to_base10(num))
+
+
     elif (conversion_type == 5):
-        num = int(input("What is the starting number?"))
+        num = int(input("What is the base-10 number?"))
         return (base10_to_bin(num))
 
     # num_type = input("Is this a Binary, Hexadecimal, or Base-10 number?")
@@ -35,9 +40,14 @@ def bin_to_base10(num):  # Option 2
     print(num)
 
 
+def hex_to_base10(num):  # Option 3
+    num3 = dec(num)
+    print(num3)
+
 def base10_to_bin(num):  # Option 5
     num5 = bin(num)
     print(num5)
+
 
 
 start_conversion()
