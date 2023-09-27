@@ -44,7 +44,7 @@ def start_conversion():
 
     if conversion_type == 1:
         num = int(input("What is the binary number?"), 2)  # In int(x, 2) the 2 is used to show
-        # that the input is a base 2 (binary) number. We found this in the
+        # that the input is a base 2 (binary) number. We found this in the class modules. 
         print("The hexadecimal number is:", bin_to_hex(num))
 
     elif conversion_type == 2:
@@ -165,4 +165,4 @@ def base10_10_hex(num6):  # Option 6
     return num6
 
 
-start_conversion()
+start_conversion()  # Executes the function 
