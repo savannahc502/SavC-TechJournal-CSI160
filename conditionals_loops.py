@@ -1,7 +1,7 @@
 # Working with conditionals and loops
 
 mixedList = ["john", "sally", "sam", "Larry", "Mary", 1, 2, 6, 7, 9, 0, 2, 4, 5]
-# mixed data types in a list are the bane of existence 
+# mixed data types in a list are the bane of existence
 title = "Python Programming"
 
 # Review difference between data structures and data types
@@ -39,11 +39,8 @@ isalpha() - Determines if a string value is composed of all alpha (letters) char
 def sortList():
     strings = []
     numbers = []
-    for j in mixedList:
-        if j.isalpha:
-            strings.append(j)
-        else:
-            numbers.append(j)
+    strings = mixedList[0:5]
+    numbers = mixedList[5:]
     print(numbers)
     print(strings)
 
