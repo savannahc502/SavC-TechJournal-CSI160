@@ -1,6 +1,7 @@
 # Working with conditionals and loops
 
-mixedList = ["john", "sally", "sam", "Larry", "Mary", 1, 2, 6, "sam", 7, 9, 0, 2, 4, 5]
+mixedList = ["john", "sally", "sam", "Larry", "Mary", 1, 2, 6, 7, 9, 0, 2, 4, 5]
+# mixed data types in a list are the bane of existence 
 title = "Python Programming"
 
 # Review difference between data structures and data types
@@ -33,15 +34,16 @@ searchList()
 '''
 Data Validation:
 isdigit() - Determines if a string value is an integer or not
+isalpha() - Determines if a string value is composed of all alpha (letters) character
 '''
 def sortList():
     strings = []
     numbers = []
     for j in mixedList:
-        if j.isdigit:
-            numbers.append(j)
-        else:
+        if j.isalpha:
             strings.append(j)
+        else:
+            numbers.append(j)
     print(numbers)
     print(strings)
 
