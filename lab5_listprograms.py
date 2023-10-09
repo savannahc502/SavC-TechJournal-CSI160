@@ -111,13 +111,14 @@ def domain_name_extractor(url):
 
     return (string) The domain name or IP address. Example: docs.python.org
     """
-     y = url.find('c')
-    domain1 = url[y:]
+    y = url.find('c')  # Finds the first appearance of the c string in the input.
+    domain1 = url[y:]  # Variable assignment for the output of url from 'c' to the end.
 
-    z = domain1.find('/')
-
-    string = domain1[0:z]
+    z = domain1.find('/')  # Finds the first appearance of '/' after the first 'c'
+    string = domain1[0:z]  # Variable assignment for everything between 'c' and '/', not including '/'
     return string
+
+    # https://github.com/savannahc502/SavC-TechJournal-CSI160/blob/main/lab5_classhelp.py
 
 def test_number_of_zeros():
     print('Running number_of_zeros tests:')
