@@ -111,16 +111,13 @@ def domain_name_extractor(url):
 
     return (string) The domain name or IP address. Example: docs.python.org
     """
-    x = url.find('/')
-    domain = url[x:]
-
-    y = domain.find('/')
-    domain1 = domain[y:]
+     y = url.find('c')
+    domain1 = url[y:]
 
     z = domain1.find('/')
 
-    final = domain1[0:z]
-    return final
+    string = domain1[0:z]
+    return string
 
 def test_number_of_zeros():
     print('Running number_of_zeros tests:')
