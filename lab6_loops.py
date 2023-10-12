@@ -1,4 +1,5 @@
-"""
+""" Five prompts were given, and we were tasked with completing the code to get the
+desired results.
 
 Author: Savannah Ciak
 Class: CSI-160-01
@@ -27,16 +28,17 @@ def add_area_code(phone_numbers, area_code):
     :param area_code: (str) The area code to add Example: '802'
     :return: (list) A list of phone numbers with the area code Example: ['802-555-1212']
     """
-    import copy
-    copy_phone_numbers = copy.copy(phone_numbers)
-    for i in copy_phone_numbers:
-        area_code = ("802-")
-        copy_phone_numbers.insert(area_code)
-    return copy_phone_numbers
+    area_code_phone_numbers = []
+
+    for i in phone_numbers:
+        area_code_phone_numbers.append(area_code + i)
+
+    return area_code_phone_numbers
+
 
 # Best Practice Tip: Making a copy of the original list will allow you to return a list with area codes
 # without modifying the original list.
 # example usage
 phone_numbers = ['555-1212', '999-0738']
-with_area_code = add_area_code(phone_numbers, '802')
+with_area_code = add_area_code(phone_numbers, '802-')
 print(with_area_code)
