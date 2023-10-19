@@ -1,0 +1,24 @@
+# Savannah Ciak Midterm CSI-160 10/19/23
+
+numbers = [1, 2, 7, 9, 13, 45, 3, 15, 6, 21]
+saved_numbers = tuple(numbers)  # https://www.tutorialspoint.com/How-to-convert-a-list-into-a-tuple-in-Python
+
+div_by_three = []
+no_div = []
+
+
+def divide_nums():
+    for num in numbers:
+        if num % 3 == 0:
+            div_by_three.append(num)
+        elif num % 3 != 0:
+            no_div.append(num)
+        else:
+            continue
+    print("This is the original list:", numbers)
+    print("These are the numbers divisible by three:", div_by_three)
+    print("These are the numbers not divisible by three", no_div)
+
+
+divide_nums()
+print("This is the original list saved as a tuple:", saved_numbers)
