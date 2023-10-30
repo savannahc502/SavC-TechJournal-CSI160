@@ -44,7 +44,6 @@ def addToDictionary():
     for keys, values in courses.items():
         k = input("Key:")
         v = input("Value:")
-        kv = k,':',v
         if k == "CSI-160" and v == "Intro to Python":
             print("The course exists.",)
             break
@@ -52,4 +51,30 @@ def addToDictionary():
             print('The key does not exist.')
 
 
-addToDictionary()
+# addToDictionary()
+# print(courses)
+courses.update({'CSI-400':'A Great Course'})  # Adds a dictionary item to the dictionary
+# print(courses)
+courses.update({'CSI-400':'Software Engineering'})  # This updates the value of the key
+# print(courses)
+courses['CSI-140'] = 'More Engineering'  # Adds the key and its value into a dictionary
+# print(courses)
+courses['CSI-2600'] = 'Advanced Python'
+print(courses)
+
+
+del courses['CSI-2600']  # Deletes the entire item (key-value pairing) -- GONE FOREVER
+# print(courses)
+key = input('Enter the key to delete: ')
+item = courses.pop(key)  # This will let you store a value, not a key, in a variable
+print(item)
+print(key)
+print(courses)
+
+
+# Restoring deleted data, provided you have properly stored it
+courses[key] = item
+print(courses)
+print(dict(sorted(courses.items())))  # Sorts the dictionary by key
+
+print(dict(sorted(courses.items(), key=lambda item: item[1])))  # Sorted a dictionary by values
