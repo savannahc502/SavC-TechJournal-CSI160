@@ -84,10 +84,10 @@ def pswd_validator():
         continue
   if upltr == True and lowltr == True and num == True and special == True:
     print("Valid password")
+    exit()
   else:
     print("Process Failed")
     pswd_validator()
 
 pswd_validator()
 
-# fault with this above programming logic ^
